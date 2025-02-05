@@ -1,0 +1,40 @@
+# Node modules
+/node_modules/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env files (sensitive information)
+.env
+.env.*.local
+
+# Hapi.js config files
+*.bak
+*.tmp
+
+# Compiled files
+/dist/
+/build/
+
+# Dependency directories
+/.pnp/
+/.pnp.js
+
+# VS Code settings
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# JetBrains IDEs (IntelliJ, PhpStorm, etc.)
+.idea/
+
+# Misc
+*.swp
+*.swo
