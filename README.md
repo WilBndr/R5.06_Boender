@@ -97,6 +97,8 @@ L'interface de l'API (documentation Swagger) est disponible à l'adresse suivant
 
 ### Accès aux routes protégées
 
-Pour accéder aux routes protégées, vous devez ajouter le **Bearer Token** dans l'onglet **Authorize** :
+Pour accéder aux routes protégées, vous devez ajouter le **Bearer Token** dans l'onglet **Authorize** en utilisant le format suivant :
 
-- Le token est généré lors de la création d'un utilisateur et est retourné dans le corps de la réponse.
+- `Bearer <token>`
+
+Le token est généré lors de la création d'un utilisateur et est retourné dans le corps de la réponse.
