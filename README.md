@@ -102,3 +102,13 @@ Pour accéder aux routes protégées, vous devez ajouter le **Bearer Token** dan
 - `Bearer <token>`
 
 Le token est généré lors de la création d'un utilisateur et est retourné dans le corps de la réponse.
+
+## Pour voir les mails envoyés
+
+Lors du developpement nous avons utilisé [ethereal](https://ethereal.email/) pour visualiser les mails envoyés.
+
+- Il suffit de se rendre sur le lien suivant : [https://ethereal.email/login](https://ethereal.email/login)
+- Utiliser les identifiants suivants :
+  - **Login** : `linwood79@ethereal.email`
+  - **Mot de passe** : `371cC8QMt6pf36tUUa`
+  - Ensuite vous pouvez voir les mails envoyés dans la section **Messages**
