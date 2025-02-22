@@ -11,19 +11,28 @@ Le projet vise à développer une API permettant de gérer des films et des util
     ```bash
     npm install
     ```
+2. **Créer un fichier `.env`**
+Ajouter les variables d'environnement suivantes dans le fichier `.env` a creer a la racine du projet:
+
+    ```env
+    MAIL_HOST=smtp.ethereal.email
+    MAIL_PORT=587
+    MAIL_USER=linwood79@ethereal.email
+    MAIL_PASS=371cC8QMt6pf36tUUa
+    ```
 
 ## Lancer les migrations
 
 ### Prérequis : Avoir la table `user` au préalable
 
-2. **Annuler les migrations précédentes**  
+3. **Annuler les migrations précédentes**  
    Si vous avez besoin de revenir à un état initial, exécutez cette commande pour annuler toutes les migrations :
 
     ```bash
     npx knex migrate:rollback --all
     ```
 
-3. **Exécuter les migrations**  
+4. **Exécuter les migrations**  
    Pour appliquer les dernières migrations à votre base de données, exécutez :
 
     ```bash
@@ -32,7 +41,7 @@ Le projet vise à développer une API permettant de gérer des films et des util
 
 ## Lancer le worker
 
-4. **Démarrer le worker d'exportation**  
+5. **Démarrer le worker d'exportation**  
    Une fois les migrations effectuées, vous pouvez démarrer le worker pour gérer les tâches d'exportation. Exécutez cette commande :
 
     ```bash
@@ -42,8 +51,7 @@ Le projet vise à développer une API permettant de gérer des films et des util
 ## Lancer un conteneur Docker pour RabbitMQ
 
 ### Prérequis : Utilisation de Docker sur Windows
-
-5. **Démarrer un conteneur RabbitMQ**  
+6. **Démarrer un conteneur RabbitMQ**  
    Si vous utilisez Windows, exécutez cette commande pour démarrer un conteneur RabbitMQ avec l'interface de gestion :
 
     ```bash
@@ -52,7 +60,7 @@ Le projet vise à développer une API permettant de gérer des films et des util
 
 ## Lancer le projet
 
-6. **Démarrer le serveur**  
+7. **Démarrer le serveur**  
    Après avoir configuré votre base de données et démarré RabbitMQ, lancez votre projet avec la commande suivante :
 
     ```bash
